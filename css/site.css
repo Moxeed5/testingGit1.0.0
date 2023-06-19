@@ -1,0 +1,25 @@
+body {
+    background: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateX(-100px);
+}
+
+section.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.space {
+    max-width: 100%;
+    height: auto;
+    
+}
